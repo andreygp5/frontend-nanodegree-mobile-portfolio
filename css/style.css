@@ -127,11 +127,17 @@ footer span {
 }
 .my-photo {
   display: block;
-  height: 70px;
+  height: auto;
   margin-right: 20px;
 }
-.work-screenshot {
+.work-screenshot img {
   max-width: 100%;
   height: auto;
   width: 200px;
+}
+
+@media screen and (max-width: 360px) {
+  .work-screenshot img {
+    width: 140px;
+  }
 }
