@@ -17,17 +17,11 @@
   <body>
     <header>
       <a href="/">
-        <img
-          class="my-photo"
-          sizes="
-          (max-width: 400px) 68px,
-          (max-width: 1000px) 100px,
-          400px
-          "
-          srcset="./img/photo-w-70.png 70w, ./img/photo-w-272.png 272w, ./img/photo-w-400.png 400w"
-          src="./img/photo-w-400.png"
-          alt="My photo"
-        />
+        <picture>
+          <source type="image/webp" srcset="./img/photo.webp" />
+          <source type="image/png" srcset="./img/photo.png" />
+          <img class="my-photo" src="./img/photo.png" />
+        </picture>
       </a>
       <p>Andrey Glazkov<br /><span>Front-end Developer</span></p>
     </header>
@@ -40,15 +34,27 @@
       <div class="content">
         <ul>
           <li>
-            <img class="work-screenshot" src="./img/works-screenshots/virtual-piano-min.png" />
+            <picture class="work-screenshot">
+              <source type="image/webp" srcset="./img/works-screenshots/virtual-piano-min.webp" />
+              <source type="image/png" srcset="./img/works-screenshots/virtual-piano-min.png" />
+              <img src="./img/works-screenshots/virtual-piano-min.png" />
+            </picture>
             <a href="https://rolling-scopes-school.github.io/andreygp5-JSFE2021Q1/virtual-piano/">Virtual piano</a>
           </li>
           <li>
-            <img class="work-screenshot" src="./img/works-screenshots/photo-filter-min.png" />
+            <picture class="work-screenshot">
+              <source type="image/webp" srcset="./img/works-screenshots/photo-filter-min.webp" />
+              <source type="image/png" srcset="./img/works-screenshots/photo-filter-min.png" />
+              <img src="./img/works-screenshots/photo-filter-min.png" />
+            </picture>
             <a href="https://rolling-scopes-school.github.io/andreygp5-JSFE2021Q1/photo-filter/">Photo filter</a>
           </li>
           <li>
-            <img class="work-screenshot" src="./img/works-screenshots/online-zoo-min.png" />
+            <picture class="work-screenshot">
+              <source type="image/webp" srcset="./img/works-screenshots/online-zoo-min.webp" />
+              <source type="image/png" srcset="./img/works-screenshots/online-zoo-min.png" />
+              <img src="./img/works-screenshots/online-zoo-min.png" />
+            </picture>
             <a href="https://rolling-scopes-school.github.io/andreygp5-JSFE2021Q1/online-zoo/pages/landing/landing.html">Online Zoo</a>
           </li>
         </ul>
