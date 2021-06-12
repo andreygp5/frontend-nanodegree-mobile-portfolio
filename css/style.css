@@ -130,6 +130,12 @@ footer span {
   height: auto;
   margin-right: 20px;
 }
+@media screen and (max-width: 500px) {
+  .my-photo {
+    width: 60px;
+  }
+}
+
 .work-screenshot img {
   max-width: 100%;
   height: auto;
